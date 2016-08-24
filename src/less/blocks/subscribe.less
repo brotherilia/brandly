@@ -1,0 +1,38 @@
+.subscribe {
+  .container();
+
+  &__fieldset {
+    .reset-block();
+    border: none;
+  }
+
+  &__fields {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+  }
+
+  &__legend {
+    .reset-block();
+    text-transform: uppercase;
+    font-family: "OpenSansLight";
+    font-size: 18px;
+    color: #ffffff;
+  }
+
+  &__email {
+    display: block;
+    position: relative;
+    width: 770px;
+    line-height: 50px;
+    outline: none;
+    background: none;
+    border: 1px solid #ffffff;
+    padding-left: 80px;
+    font-family: "OpenSansLight";
+    font-size: 13px;
+    text-transform: uppercase;
+    background: url("../img/mail.png") no-repeat;
+    background-position: 30px 20px;
+  }
+}

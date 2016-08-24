@@ -1,0 +1,46 @@
+.features {
+  .products();
+
+  &__item {
+    .products-item();
+    font-family: "LatoBlack";
+    width: 570px;
+    height: 418px;
+
+    &--1 {
+      background-image: url("../img/feature-1.jpg");
+    }
+
+    &--2 {
+      background-image: url("../img/feature-2.jpg");
+      text-transform: uppercase;
+    }
+  }
+
+  &__link {
+    .products-link();
+
+    &:hover {
+      background-color: rgba(34, 37, 51, 0);
+    }
+
+    &:active {
+      background-color: rgba(34, 37, 51, .8);
+    }
+  }
+
+  &__text {
+    .products-text();
+
+    &::before {
+      .pseudo-common();
+      width: 192px;
+      height: 100%;
+      border-top: 1px solid #ffffff;
+      border-bottom: 1px solid #ffffff;
+      left: 50%;
+      top: 0;
+      transform: translate(-50%, 0);
+    }
+  }
+}
