@@ -1,0 +1,71 @@
+@font-face {
+  font-family: "BebasNeueBook";
+  src: url("../fonts/bebasneue_book-webfont.woff2") format("woff2"),
+       url("../fonts/bebasneue_book-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "BebasNeueRegular";
+  src: url("../fonts/bebasneue_regular-webfont.woff2") format("woff2"),
+       url("../fonts/bebasneue_regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "LatoBlack";
+  src: url("../fonts/lato-black-webfont.woff2") format("woff2"),
+       url("../fonts/lato-black-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "LatoBold";
+  src: url("../fonts/lato-bold-webfont.woff2") format("woff2"),
+       url("../fonts/lato-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "LatoRegular";
+  src: url("../fonts/lato-regular-webfont.woff2") format("woff2"),
+       url("../fonts/lato-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "OpenSansLight";
+  src: url("../fonts/opensans-light-webfont.woff2") format("woff2"),
+       url("../fonts/opensans-light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "OpenSansLight";
+  src: url("../fonts/opensans-lightitalic-webfont.woff2") format("woff2"),
+       url("../fonts/opensans-lightitalic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "OpenSans";
+  src: url("../fonts/opensans-regular-webfont.woff2") format("woff2"),
+       url("../fonts/opensans-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "OpenSans";
+  src: url("../fonts/opensans-bold-webfont.woff2") format("woff2"),
+       url("../fonts/opensans-bold-webfont.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
