@@ -1,5 +1,6 @@
 .jumbotron {
   .container();
+  margin-top: 40px;
 
   &__text {
     display: block;
@@ -8,6 +9,20 @@
     color: #ffffff;
     font-family: "OpenSansLight";
     font-size: 30px;
+    line-height: 90px;
+    white-space: nowrap;
+
+    @media @desktop-small-widths {
+      font-size: 20px;
+      line-height: 70px;
+    }
+
+    @media @mobile-widths {
+      font-size: 14px;
+      line-height: 20px;
+      white-space: normal;
+      margin-bottom: 20px;
+    }
   }
 
   &__text--wide {
@@ -17,6 +32,14 @@
   &__text--big {
     font-family: "LatoBlack";
     font-size: 58px;
-    line-height: 145px;
+
+    @media @desktop-small-widths {
+      font-size: 35px;
+    }
+
+    @media @mobile-widths {
+      font-size: 26px;
+      line-height: 30px;
+    }
   }
 }

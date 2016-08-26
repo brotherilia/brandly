@@ -10,6 +10,11 @@
     display: flex;
     justify-content: space-between;
     margin-top: 25px;
+
+    @media @mobile-widths {
+      flex-direction: column;
+      margin-top: 20px;
+    }
   }
 
   &__legend {
@@ -34,5 +39,17 @@
     text-transform: uppercase;
     background: url("../img/mail.png") no-repeat;
     background-position: 30px 20px;
+
+    @media @desktop-small-widths {
+      width: auto;
+      flex-grow: 1;
+      margin-right: 10%;
+    }
+
+    @media @mobile-widths {
+      margin-bottom: 20px;
+      margin-right: 0;
+      width: 100%;
+    }
   }
 }

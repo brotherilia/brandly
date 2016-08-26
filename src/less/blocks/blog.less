@@ -1,9 +1,16 @@
 .blog {
-  .products();
+  .flex-block();
   position: relative;
 
   &__post {
-    width: 570px;
+    .flex-block-column();
+
+    @media @mobile-widths {
+
+      &:nth-child(even) {
+        display: none;
+      }
+    }
   }
 
   &__title {
@@ -40,14 +47,35 @@
     position: absolute;
     top: 300px;
 
+    @media @mobile-widths{
+      top: 240px;
+      cursor: default;
+    }
+
     &--prev {
       left: -100px;
       transform: rotate(-45deg);
+
+      @media @desktop-small-widths {
+        left: -50px;
+      }
+
+      @media @mobile-widths {
+        left: 20px;
+      }
     }
 
     &--next {
       right: -100px;
       transform: rotate(135deg);
+
+      @media @desktop-small-widths {
+        right: -50px;
+      }
+
+      @media @mobile-widths {
+        right: 20px;
+      }
     }
 
     &:hover {

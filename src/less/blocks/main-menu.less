@@ -4,10 +4,28 @@
   justify-content: space-between;
   flex-grow: 1;
 
+  @media @mobile-widths {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    width: 70%;
+    top: 60px;
+    left: 50%;
+    transform: translate(-50%);
+  }
+
   &__item {
     font-size: 18px;
     font-family: "OpenSans";
     line-height: 18px;
+
+    @media @mobile-widths {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 4px;
+      box-shadow: 0 0 0 1px rgba(255, 255, 255, .3);
+    }
   }
 
   &__link {
@@ -16,14 +34,33 @@
     &:visited {
       text-decoration: none;
       color: #ffffff;
+
+      @media @mobile-widths {
+        display: block;
+        height: 100%;
+        padding: 10px;
+        background-color: rgba(0, 0, 0, .85);
+        cursor: default;
+      }
     }
 
     &:hover {
       opacity: 0.5;
+
+      @media @mobile-widths {
+        opacity: 1;
+      }
     }
 
     &:active {
       opacity: 0.3;
+
+      @media @mobile-widths {
+        opacity: 1;
+        background-color: rgba(220, 0, 0, 0.85);
+        box-shadow: 0 0 0 1px rgba(220, 0, 0, 0.85);
+        color: rgba(0, 0, 0, .5);
+      }
     }
   }
 }

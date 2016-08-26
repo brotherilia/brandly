@@ -15,6 +15,10 @@
   font-size: 16px;
   width: 170px;
 
+  @media @mobile-widths {
+    cursor: default;
+  }
+
   &--jumbotron {
     font-family: "LatoBlack";
     color: #ffffff;
@@ -27,16 +31,21 @@
     font-size: 18px;
   }
 
-  &--size {
-    width: 70px;
-  }
-
   &--subscribe {
     border: none;
     color: #000000;
     background-color: #ffffff;
     font-size: 18px;
     width: 270px;
+
+    @media @mobile-widths {
+      width: 100%;
+      cursor: default !important;
+    }
+  }
+
+  &--catalog {
+    width: 100%;
   }
 
   &:hover {

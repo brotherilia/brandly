@@ -1,11 +1,14 @@
 .features {
-  .products();
+  .reset-list();
+  .container();
+  .flex-block();
 
   &__item {
     .products-item();
     font-family: "LatoBlack";
     width: 570px;
     height: 418px;
+    background-size: cover;
 
     &--1 {
       background-image: url("../img/feature-1.jpg");
@@ -14,6 +17,25 @@
     &--2 {
       background-image: url("../img/feature-2.jpg");
       text-transform: uppercase;
+    }
+
+    @media @desktop-small-widths {
+      width: 38.5vw;
+      height: 28.233vw;
+    }
+
+    @media @mobile-widths {
+      width: 85vw;
+      height: 46.445vw;
+      min-width: 280px;
+      min-height: 205px;
+      max-width: 370px;
+      margin-bottom: 30px;
+      font-size: 4.45vw;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
     }
   }
 

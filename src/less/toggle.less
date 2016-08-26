@@ -25,3 +25,13 @@
   cursor: inherit;
   opacity: 1;
 }
+
+.navbar__toggle {
+  display: none;
+  &:checked + .navbar__icon {
+    background: url("../img/icon-cross.svg") no-repeat 50% 50%;
+  }
+  &:checked ~ .main-menu {
+    display: flex;
+  }
+}

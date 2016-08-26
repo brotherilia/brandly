@@ -10,10 +10,14 @@
     &:link,
     &:visited {
       text-decoration: none;
-      color: #dc0000;
+      color: rgba(220, 0, 0, 1.0);
       display: block;
       height: 48px;
       line-height: 48px;
+    }
+
+    @media @mobile-widths {
+      cursor: default;
     }
 
     &:hover {

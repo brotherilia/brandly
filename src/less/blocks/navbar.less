@@ -3,4 +3,27 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 20px;
+
+  @media @mobile-widths {
+    position: relative;
+  }
+
+  &__icon {
+    display: none;
+
+    @media @mobile-widths {
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      display: block;
+      width: 40px;
+      height: 45px;
+      border: none;
+      outline: none;
+      background: url("../img/icon-menu.svg") no-repeat 50% 50%;
+      background-size: 23px 22px;
+    }
+  }
 }
