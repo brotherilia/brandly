@@ -551,6 +551,17 @@ input[type="radio"] {
   cursor: inherit;
   opacity: 1;
 }
+.navbar__toggle {
+  display: none;
+}
+.navbar__toggle:checked + .navbar__icon {
+  background: url("../img/icon-cross.svg") no-repeat 50% 50%;
+}
+.navbar__toggle:checked ~ .main-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
 .page-header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -587,6 +598,9 @@ input[type="radio"] {
   -webkit-box-pack: justify;
   -ms-flex-align: center;
   -ms-flex-pack: justify;
+}
+.navbar__icon {
+  display: none;
 }
 .logo {
   flex-grow: 1;
@@ -1233,6 +1247,9 @@ input[type="radio"] {
   opacity: 0.3;
 }
 @media (max-width: 1400px) {
+  .page-header {
+    padding-top: 20px;
+  }
   .navbar {
     width: 80%;
   }
@@ -1313,16 +1330,77 @@ input[type="radio"] {
   }
 }
 @media (max-width: 900px) {
+  .page-header {
+    padding-top: 10px;
+  }
   .navbar {
     width: 90%;
     min-width: 280px;
     max-width: 570px;
   }
   .navbar {
-    /* flex-direction: column; */
+    position: relative;
+  }
+  .navbar__icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    display: block;
+    width: 40px;
+    height: 45px;
+
+    background: url("../img/icon-menu.svg") no-repeat 50% 50%;
+    background-size: 23px 22px;
+    border: none;
+    outline: none;
+    cursor: pointer;
   }
   .main-menu {
+    position: absolute;
+    top: 60px;
+    left: 50%;
+
     display: none;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    align-items: center;
+    width: 70%;
+
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
+
+    -webkit-box-align: center;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: vertical;
+    -ms-flex-align: center;
+    -ms-grid-row-align: center;
+  }
+  .main-menu__item {
+    width: 100%;
+    margin-bottom: 4px;
+
+    text-align: center;
+
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.3);
+  }
+  .main-menu__link:link,
+  .main-menu__link:visited {
+    display: block;
+    height: 100%;
+    padding: 10px;
+
+    background-color: rgba(0, 0, 0, 0.85);
+  }
+  .main-menu__link:hover {
+    opacity: 1;
+  }
+  .main-menu__link:active {
+    color: rgba(0, 0, 0, 0.5);
+
+    background-color: rgba(220, 0, 0, 0.85);
+    box-shadow: 0 0 0 1px rgba(220, 0, 0, 0.85);
+    opacity: 1;
   }
   .jumbotron {
     width: 90%;
