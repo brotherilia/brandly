@@ -581,6 +581,7 @@ input[type="radio"] {
   align-items: center;
   width: 1170px;
   margin: 0 auto;
+  margin-bottom: 20px;
 
   -webkit-box-align: center;
   -webkit-box-pack: justify;
@@ -659,22 +660,24 @@ input[type="radio"] {
 .jumbotron {
   width: 1170px;
   margin: 0 auto;
+  margin-top: 40px;
 }
 .jumbotron__text {
   display: block;
 
   font-size: 30px;
+  line-height: 90px;
   font-family: "OpenSansLight";
   text-align: center;
   color: #ffffff;
   text-transform: uppercase;
+  white-space: nowrap;
 }
 .jumbotron__text--wide {
   letter-spacing: 10px;
 }
 .jumbotron__text--big {
   font-size: 58px;
-  line-height: 145px;
   font-family: "LatoBlack";
 }
 .slider {
@@ -684,6 +687,7 @@ input[type="radio"] {
   justify-content: center;
   width: 1170px;
   margin: 0 auto;
+  margin-top: 20px;
 
   -webkit-box-pack: center;
   -ms-flex-pack: center;
@@ -1235,6 +1239,13 @@ input[type="radio"] {
   .jumbotron {
     width: 80%;
   }
+  .jumbotron__text {
+    font-size: 20px;
+    line-height: 70px;
+  }
+  .jumbotron__text--big {
+    font-size: 35px;
+  }
   .slider {
     width: 80%;
   }
@@ -1307,10 +1318,27 @@ input[type="radio"] {
     min-width: 280px;
     max-width: 570px;
   }
+  .navbar {
+    /* flex-direction: column; */
+  }
+  .main-menu {
+    display: none;
+  }
   .jumbotron {
     width: 90%;
     min-width: 280px;
     max-width: 570px;
+  }
+  .jumbotron__text {
+    margin-bottom: 20px;
+
+    font-size: 14px;
+    line-height: 20px;
+    white-space: normal;
+  }
+  .jumbotron__text--big {
+    font-size: 26px;
+    line-height: 30px;
   }
   .slider {
     width: 90%;
@@ -1381,8 +1409,9 @@ input[type="radio"] {
     -ms-grid-row-align: center;
   }
   .features__item {
-    width: 63.34vw;
+    width: 85vw;
     min-width: 280px;
+    max-width: 370px;
     height: 46.445vw;
     min-height: 205px;
     margin-bottom: 30px;
@@ -1441,6 +1470,9 @@ input[type="radio"] {
   }
   .catalog-item__column {
     margin-right: 0;
+  }
+  .catalog-item__column--img {
+    max-width: 370px;
   }
   .catalog-item__title {
     margin-top: 30px;
